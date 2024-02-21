@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  background-color: white;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+h2,
+h3 {
+  font-weight: 500;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.form-control {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.form-select {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.trip-img {
+  max-width: 100%;
+}
+
+/*Styling for forms*/
+
+/*Styles the field groups (label + input field)*/
+.form-group {
+  margin-bottom: 15px !important;
+}
+
+/*Styles the input fields*/
+.inputField {
+  border: 3px solid #219eba !important;
+  padding: 15px !important;
+  border-radius: 10px !important;
+  margin: 5px !important;
+}
+
+/*Styles the placeholder text*/
+.inputField::placeholder {
+  color: rgb(187, 184, 184) !important;
+}

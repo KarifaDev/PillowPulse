@@ -1,0 +1,77 @@
+.date-picker {
+  font-family: 'Open Sans', sans-serif;  display: inline;
+  background: white;
+  min-width: 50%;
+  min-height: 2rem;
+  padding: 0.5rem;
+  border-radius: 1.4rem;
+  position: relative;
+  isolation: isolate;
+}
+
+.date-picker,
+.date-picker > * {
+  cursor: text;
+  font-size: 1.2rem;
+}
+
+.date-picker:hover {
+  background: rgba(40, 40, 250, 0.28);
+}
+
+.date-picker:active {
+  background: rgba(40, 40, 250, 0.2);
+}
+
+.date-picker:focus > input[type='date'],
+.date-picker:focus-within > input[type='date'] {
+  color: black;
+  font-family: 'Open Sans', sans-serif;}
+
+.date-picker:focus,
+.date-picker:focus-within {
+  box-shadow: 0 0 0 0.1rem black;
+  font-family: 'Open Sans', sans-serif;}
+
+.date-picker > .placeholder::after {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  color: #222;
+}
+
+.start-date > .placeholder::after {
+  content: 'Start Date';
+}
+
+.end-date > .placeholder::after {
+  content: 'End Date';
+}
+
+.date-picker:focus > .placeholder,
+.date-picker:focus-within > .placeholder,
+.date-picker > input[type='date']:valid + .placeholder {
+  display: none;
+}
+
+.date-picker > input[type='date'] {
+  background: none;
+  border: none;
+  outline: none;
+  color: transparent;
+  font-family: 'Open Sans', sans-serif;  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.date-picker > input[type='date']:valid {
+  color: black;
+  font-family: 'Open Sans', sans-serif;}
